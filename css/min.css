@@ -35,3 +35,6 @@ body,html{
     width:100%;
     bottom:0;
  }
+ .card_image{
+   height: 200px;
+ }
