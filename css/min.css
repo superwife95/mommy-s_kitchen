@@ -3,8 +3,35 @@ body{
     background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.4;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color:rgba(0, 0, 0, 0.5);
 }
 body,html{
     height: 100%;
 }
+.imgheight{
+    height: 500px;
+}
+.menucolor{
+    color:var(--bs-pink);
+}
+@media (max-width:1000px) {
+    #carouselExampleInterval{
+        display:none;
+      
+    }
+    #imgphone{
+        display: block;
+    }
+}
+@media (min-width:1000px) {
+        #imgphone{
+            display: none;
+        }
+ }
+ footer{
+    position:fixed;
+    width:100%;
+    bottom:0;
+ }
