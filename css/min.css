@@ -1,0 +1,10 @@
+/* adding background image */
+body{
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+}
+body,html{
+    height: 100%;
+}
