@@ -9,10 +9,18 @@
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <link rel="icon" type="image/jpg" href="images/logo.jpg">
         <title>Registration Page</title>
+        <style>
+           .regRadio,.ps-4 {
+            padding-left: 8rem !important;
+            } 
+            body{
+                background-color: bisque;
+            }
+        </style>
     </head>
     <body>
         <form>
-            <div class="container border border-info">
+            <div class="container border border-success mt-2">
                 <header>
                     <h1 class="display-1 text-center text-decoration-underline">Registration Form</h1>
                 </header>
@@ -43,34 +51,42 @@
                     </div>
                     <div class="row form-group mt-2">
                         <label for="cpwd" class="form-label col-4 text-center">Mobile:</label>
-                        <input type="tel" class="form-control-sm col-4" id="mName" placeholder="Enter Mobile Number" pattern="/(7|8|9)\d{9}/">
+                        <input type="tel" class="form-control-sm col-4" id="mName" placeholder="Enter Mobile Number">
                     </div>
                     <div class="row mt-2">
-                        <span>How Did You hear about us?</span>
+                        <span class="col-4 text-center ">How Did You hear about us?</span>
                     </div>
-                    <div class="row">
-                        <div class="form-check col-md-6 mt-1">
-                            <input type="radio" class="form-check-input col-2 mb-2" id="g" required>
-                            <label class="form-check-label col-sm-9 col-md-4" for="g">Google</label>
+                    <div class="row ps-4 regRadio">
+                        <div class="form-check col-md-6 mb-1">
+                            <input class="form-check-input col-2 mb-2" type="radio" name="exampleRadios" id="exampleRadios1" value="Google" checked>
+                            <label class="form-check-label col-sm-9 col-md-4" for="exampleRadios1">
+                              google
+                            </label>
                         </div>
-                        <div class="form-check col-md-6 mt-1">
-                            <input type="radio" class="form-check-input" id="i" required>
-                            <label class="form-check-label col-sm-9 col-md-4" for="i">Instagram</label>
+                         <div class="form-check col-md-6 mb-1">
+                            <input class="form-check-input col-2 mb-2" type="radio" name="exampleRadios" id="exampleRadios2" value="Instagram">
+                            <label class="form-check-label col-sm-9 col-md-4" for="exampleRadios2">
+                             Instagram
+                            </label>
                         </div>
-                        <div class="form-check col-md-6 mt-1">
-                            <input type="radio" class="form-check-input  col-2 mb-2" id="fb" required>
-                            <label class="form-check-label col-sm-9 col-md-4" for="fb">Facebook</label>
+                        <div class="form-check col-md-6 mb-1">
+                            <input class="form-check-input col-2 mb-2" type="radio" name="exampleRadios" id="exampleRadios3" value="facebook">
+                            <label class="form-check-label col-sm-9 col-md-4" for="exampleRadios3">
+                              FaceBook
+                            </label>
                         </div>
-                        <div class="form-check col-md-6 mt-1">
-                            <input type="radio" class="form-check-input" id="o" required>
-                            <label class="form-check-label col-sm-9 col-md-4" for="o">Other</label>
+                        <div class="form-check col-md-6 mb-1">
+                            <input class="form-check-input col-2 mb-2" type="radio" name="exampleRadios" id="exampleRadios4" value="other">
+                            <label class="form-check-label col-sm-9 col-md-4" for="exampleRadios4">
+                              Other
+                            </label>
                         </div>
-                        <div class="row mt-1 mb-4">
-                            <input type="submit" class=" col-2 offset-5 input-control btn btn-primary">
-                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <input type="submit" class="btn btn-info col-3 offset-5">
                     </div>
                 
-            </main>
+                </main>
 
                         
             </div>
