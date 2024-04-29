@@ -38,3 +38,9 @@ body,html{
  .card_image{
    height: 200px;
  }
+ #vegItems h4{
+    color:green;
+ }
+ #nVegItems h4{
+    color:red;
+ }
