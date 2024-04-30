@@ -14,11 +14,11 @@
     </head>
     <body>
         <header>
-            <h3 class="display-3 text-center">Checkout</h3>
+            <h3 class="display-3 text-center text-light">Checkout</h3>
         </header>
         <body>
             <main>
-                <div class="container-fluid">
+                <div class="container">
                     <div class="row">
                         <section class="bg-white col-lg-6 col-md--6 mt-2">
                             <div class="row justify-content-center pt-2">
@@ -33,15 +33,123 @@
                             <div class="row pt-2">
                              <h6 class="h6 text-center">Or Continue below to pay with credit card</h6>
                              <form>
-                                <div class="form form-group">
-                                    <label for="uemail" class="form-label col-12 fw-bold">Contact Information</label>
-                                    <input type="email" class="form-input-lg col-12" id="uemail" placeholder="example@example.com">
+                                <div class="row form-group">
+                                    <label for="uemail" class="form-label col-12 fw-bold pt-1">Contact Information</label>
+                                    <input type="email" class="form-control-sm ms-1 col-11" id="uemail" placeholder="example@example.com" required>
+                                </div>
+                                <div class="row">
+                                    <label for="uname" class="form-label fw-bold pt-4">Delivery Address</label>
+                                    <input type="text" class="form-control-sm col-6 ms-1" placeholder="First name" required maxlength="10">
+                                    <input type="text" class="form-control-sm col-5 ms-2"  placeholder="Last Name" maxlength="10" required>
+                                    
+                                </div>
+                                <div class="row">
+                                    <textarea class="form-control-sm mt-3 ms-11 col-11 ms-1" rows="1" cols="9" placeholder="Address" required></textarea>
+                                    <input type="text" class="form-control-sm ms-1 mt-3 col-11"  placeholder="Apartment , suite (optional)" maxlength="10">
+                                </div>
+                                <div class="row">
+                                    <input type="text" class="form-control-sm mt-3 col-6 ms-1"  value="Bangalore,India" placeholder="City" maxlength="10" disabled>
+                                    <input type="text" class="form-control-sm ms-4 mt-3 col-4"  placeholder="zipcode" maxlength="5" required>
+                                    <input type="tel" class="form-control-sm mt-3 ms-1 col-11"  placeholder="Mobile" maxlength="10" required>
+                                    
+                                </div><hr>
+                                <div class="row">
+                                    <h6 class="display-6">Payment</h6>
+                                    <div class="form-check col-md-5 mb-1">
+                                        <input class="form-check-input col-2 mb-2 ms-1" type="radio" name="exampleRadios" id="exampleRadios1" value="credit" checked>
+                                        <label class="form-check-label col-sm-9 col-md-5" for="exampleRadios1">
+                                          credit Card
+                                        </label>
+                                    </div>
+                                     <div class="form-check col-md-5 mb-1">
+                                        <input class="form-check-input col-2 mb-2 ms-1" type="radio" name="exampleRadios" id="exampleRadios2" value="debit">
+                                        <label class="form-check-label col-sm-9 col-md-5" for="exampleRadios2">
+                                         Debit Card
+                                        </label>
+                                    </div>
+                                    <div class="form-check col-md-6 mb-1">
+                                        <input class="form-check-input col-2 mb-2 ms-1" type="radio" name="exampleRadios" id="exampleRadios3" value="cod">
+                                        <label class="form-check-label col-sm-9 col-md-5" for="exampleRadios3">
+                                          cash on delivery
+                                        </label>
+                                    </div>
+                                    <div id="card">
+                                        <input type="text" class="form-control-sm col-5 mb-2" placeholder="Name on Card" required>
+                                        <input type="text" class="form-control-sm col-5 mb-2" placeholder="Card Number" required>
+                                        <input type="text" class="form-control-sm col-5 mb-2" placeholder="Expriy Date" required>
+                                        <div class="input-group col-4">
+                                            <input type="text" class="form-control-sm  mb-2" placeholder="CVV" required>
+                                            <span class="input-group-text mb-2"><i class="fa fa-credit-card" aria-hidden="true"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <a href="menu.html" class="col-3">Go To Menu</a>
+                                   <input type="submit" value="proceed" class="col-4 btn btn-primary offset-4 mb-4">   
                                 </div>
                              </form>
                            </div>
                         </section>
                         <section class="checkBg col-md-6 col-lg-6 mt-2">
-                            df
+                            <div class="row">
+                                <h5 class="display-5 text-center mt-2">Your shopping Cart</h5>
+                            </div>
+                            <div class="row">
+                                <table class="table table-striped m-1">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col" class="col-3">Item</th>
+                                        <th scope="col">Quanity</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Total</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td scope="row">
+                                            <img class="col-6" src="images/momo.jpeg">
+                                            <p class="mt-2">Stock:<span class="text-success">In Stock</span></p>
+                                        </td>
+                                        <td ><input type="number" value="2" class="col-4" max="10" min="1"></td>
+                                        <td class="col-2">Rs 75</td>
+                                        <td class="col-1">Rs 150</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">
+                                            <img class="col-6" src="images/butter.jpeg">
+                                            <p class="mt-2">Stock:<span class="text-success">In Stock</span></p>
+                                        </td>
+                                        <td ><input type="number" value="1" class="col-4" max="10" min="1"></td>
+                                        <td class="col-2">Rs 200</td>
+                                        <td class="col-1">Rs 200</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">
+                                            <h3 class="display-6">Subtotal</h3>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="col-3 display-6">Rs 350</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">
+                                            <h3 class="display-6">Shipping</h3>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="col-3 display-6">Rs 30</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">
+                                            <h3 class="display-6">Total</h3>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="col-3 display-6">Rs 380</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </section>
                 </div>
                 </div>
