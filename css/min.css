@@ -32,6 +32,10 @@ body,html{
         #imgphone{
             display: none;
         }
+        #loginpage{
+            margin-top: 10%;
+            
+        }
  }
  footer{
     position:fixed;
@@ -50,13 +54,10 @@ body,html{
  .regRadio,.ps-4 {
     padding-left: 8rem !important;
     } 
-    #loginpage{
-        margin-top: 15%;
-        
+    
+    .checkPadding{
+        padding-left: 37%;
     }
     .loginSection{
         padding-bottom: 10%;
-    }
-    .checkPadding{
-        padding-left: 37%;
     }
