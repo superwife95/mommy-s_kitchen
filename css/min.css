@@ -50,6 +50,10 @@ body,html{
  .regRadio,.ps-4 {
     padding-left: 8rem !important;
     } 
-#loginpage{
-    margin-top:50vw;
-}
+    #loginpage{
+        margin-top: 15%;
+        
+    }
+    .loginSection{
+        padding-bottom: 10%;
+    }
