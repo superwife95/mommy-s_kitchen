@@ -20,8 +20,8 @@
             <main>
                 <div class="container">
                     <div class="row">
-                        <section class="bg-white col-lg-6 col-md--6 mt-2">
-                            <div class="row justify-content-center pt-2">
+                        <section class="bg-white col-lg-6 col-md-6 mt-2">
+                            <div class="row justify-content-center pt-2" id="checkout">
                                <h6 class="display-6 col-12 text-center">Express checkout</h6>
                                <button class="col-3 btn btn-info ms-1"> <i class="fa fa-paypal"> PayPal</i>
                                </button>
@@ -94,8 +94,8 @@
                             <div class="row">
                                 <h5 class="display-5 text-center mt-2">Your shopping Cart</h5>
                             </div>
-                            <div class="row">
-                                <table class="table table-striped m-1">
+                            <div class="row ps-2 pe-2">
+                                <table class="table table-striped">
                                     <thead>
                                     <tr>
                                         <th scope="col" class="col-3">Item</th>
@@ -149,6 +149,34 @@
                                     </tr>
                                     </tbody>
                                 </table>
+                            </div>
+                            <div class="row">
+                                <div class="input-group">
+                                    <input type="text" class="col-6" placeholder="PromoCode">
+                                    <button class="btn btn-secondary">Redeem</button>
+                                </div>
+                            </div>
+                            <div class="row mt-2 mb-2">
+                                <button class="ms-2 btn btn-success col-5" data-bs-target="#section1"><a href="#checkout" class="text-light text-decoration-none">proceed</a></button>
+                                <button class="btn btn-danger col-5 offset-1" data-bs-toggle="modal" data-bs-target="#mo1">Clear cart</button>
+                                <div class="modal fade" id="mo1">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Clear Cart</h5>
+                                                <button class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Do You Really want to clear the cart?</div>
+                                                <div class="modal-footer">
+                                                    <button class="btn btn-secondary">
+                                                        proceed
+                                                    </button>
+                                                    <button class="btn btn-secondary" data-bs-dismiss="modal">Dismiss</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </section>
                 </div>
