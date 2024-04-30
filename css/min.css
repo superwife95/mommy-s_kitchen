@@ -64,4 +64,6 @@ body,html{
     .checkBg{
         background-color: beige;
     }
-    
+   .navbar-nav .nav-item a{
+        font-size: 20px;
+    }

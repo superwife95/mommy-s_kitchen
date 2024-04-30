@@ -11,17 +11,28 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="css/min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js">
     </head>
     <body>
         <header>
-            <h3 class="display-3 text-center text-light">Checkout</h3>
+            <ul class="breadcrumb justify-content-center">
+                <li class="breadcrumb-item">
+                    <a class="bread-crumb-link text-white" href="index.html">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a class="bread-crumb-link text-white" href="menu.html">menu</a>
+                </li>
+                <li class="breadcrumb-item text-white">
+                    <a class="bread-crumb-link text-white" href="checkout.html" disabled>Checkout</a>
+                </li>
+            </ul>
         </header>
         <body>
             <main>
                 <div class="container">
                     <div class="row">
                         <section class="bg-white col-lg-6 col-md-6 mt-2">
-                            <div class="row justify-content-center pt-2" id="checkout">
+                            <div class="row justify-content-center pt-2">
                                <h6 class="display-6 col-12 text-center">Express checkout</h6>
                                <button class="col-3 btn btn-info ms-1"> <i class="fa fa-paypal"> PayPal</i>
                                </button>
@@ -35,7 +46,7 @@
                              <form>
                                 <div class="row form-group">
                                     <label for="uemail" class="form-label col-12 fw-bold pt-1">Contact Information</label>
-                                    <input type="email" class="form-control-sm ms-1 col-11" id="uemail" placeholder="example@example.com" required>
+                                    <input type="email" class="form-control-sm ms-1 col-11" title="enter your email" id="uemail" placeholder="example@example.com" required>
                                 </div>
                                 <div class="row">
                                     <label for="uname" class="form-label fw-bold pt-4">Delivery Address</label>
@@ -157,7 +168,7 @@
                                 </div>
                             </div>
                             <div class="row mt-2 mb-2">
-                                <button class="ms-2 btn btn-success col-5" data-bs-target="#section1"><a href="#checkout" class="text-light text-decoration-none">proceed</a></button>
+                                <button class="ms-2 btn btn-success col-5"><a href="#uemail" class="text-light text-decoration-none">proceed</a></button>
                                 <button class="btn btn-danger col-5 offset-1" data-bs-toggle="modal" data-bs-target="#mo1">Clear cart</button>
                                 <div class="modal fade" id="mo1">
                                     <div class="modal-dialog">
