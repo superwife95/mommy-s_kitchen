@@ -61,3 +61,6 @@ body,html{
     .loginSection{
         padding-bottom: 10%;
     }
+    .checkBg{
+        background-color: beige;
+    }

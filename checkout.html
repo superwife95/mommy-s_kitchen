@@ -10,6 +10,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="css/min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <header>
@@ -18,9 +19,31 @@
         <body>
             <main>
                 <div class="container-fluid">
-                    <section class="row">
-                      
-                    </section>
+                    <div class="row">
+                        <section class="bg-white col-lg-6 col-md--6 mt-2">
+                            <div class="row justify-content-center pt-2">
+                               <h6 class="display-6 col-12 text-center">Express checkout</h6>
+                               <button class="col-3 btn btn-info ms-1"> <i class="fa fa-paypal"> PayPal</i>
+                               </button>
+                               <button class="col-3 btn btn-dark ms-1"> <i class="fa fa-google" aria-hidden="true"></i> Pay</i>
+                               </button> 
+                               <button class="col-3 btn btn-warning ms-1"> <i class="fa fa-amazon" aria-hidden="true"></i> Pay</i>
+                               </button>        
+                           </div><hr>
+                            <div class="row pt-2">
+                             <h6 class="h6 text-center">Or Continue below to pay with credit card</h6>
+                             <form>
+                                <div class="form form-group">
+                                    <label for="uemail" class="form-label col-12 fw-bold">Contact Information</label>
+                                    <input type="email" class="form-input-lg col-12" id="uemail" placeholder="example@example.com">
+                                </div>
+                             </form>
+                           </div>
+                        </section>
+                        <section class="checkBg col-md-6 col-lg-6 mt-2">
+                            df
+                        </section>
+                </div>
                 </div>
             </main>
             <footer></footer>
