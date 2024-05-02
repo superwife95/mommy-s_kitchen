@@ -31,4 +31,5 @@
 - ![momo](https://github.com/sreevidya95/mommy-s_kitchen/assets/167165121/b36d4d9b-4031-48e0-bdd7-5c86f49135a7)
 - ![butter](https://github.com/sreevidya95/mommy-s_kitchen/assets/167165121/9a5483c6-aa98-4db5-ad82-3f061baf4330)
 #### Registration and Login page
-- images/background.jpg
+- ![background](https://github.com/sreevidya95/mommy-s_kitchen/assets/167165121/586a461e-4e41-4f76-954b-6a5da2db1877)
+- ![logo](https://github.com/sreevidya95/mommy-s_kitchen/assets/167165121/a59ae79e-0b5a-47ba-a1ef-758da1aa1f87)
