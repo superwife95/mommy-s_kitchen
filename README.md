@@ -33,3 +33,9 @@
 #### Registration and Login page
 - ![background](https://github.com/sreevidya95/mommy-s_kitchen/assets/167165121/586a461e-4e41-4f76-954b-6a5da2db1877)
 - ![logo](https://github.com/sreevidya95/mommy-s_kitchen/assets/167165121/a59ae79e-0b5a-47ba-a1ef-758da1aa1f87)
+
+##intersting piece of code I wrote
+- Carousel images at home page and only one image will be displayed for small devices
+- Different sections with different designs and color for checkout page
+- Added fa icons inside buttons and grouped then with text fields
+- responsive website
