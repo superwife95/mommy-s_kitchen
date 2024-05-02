@@ -46,10 +46,10 @@ body,html{
  }
  /*home page footer*/
  footer{
-    position:fixed;
-    width:100%;
+    position:sticky;
+    min-width:100%;
     bottom:0;
-    height: 45px;
+    padding-top: 2px;
  }
  /* image height of checkout page*/
  .card_image{
