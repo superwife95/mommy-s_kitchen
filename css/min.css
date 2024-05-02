@@ -87,3 +87,6 @@ body,html{
     .sbo{
         border:2px solid black;
     }
+    .fa-keyboard-o,.fa-user{
+      padding:10px;
+    }
