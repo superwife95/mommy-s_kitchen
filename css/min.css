@@ -68,3 +68,9 @@ body,html{
    .navbar-nav .nav-item a{
         font-size: 20px;
     }
+    #paySelect{
+        margin-left: 14px;
+    }
+    .sbo{
+        border:2px solid black;
+    }

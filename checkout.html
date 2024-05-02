@@ -55,7 +55,7 @@
                                     
                                 </div>
                                 <div class="row">
-                                    <textarea class="form-control-sm mt-3 ms-11 col-11 ms-1" rows="1" cols="9" placeholder="Address" required></textarea>
+                                    <textarea class="form-control-sm mt-3 ms-11 col-11 ms-1 sbo" rows="1" cols="9" placeholder="Address" required></textarea>
                                     <input type="text" class="form-control-sm ms-1 mt-3 col-11"  placeholder="Apartment , suite (optional)" maxlength="10">
                                 </div>
                                 <div class="row">
@@ -65,25 +65,12 @@
                                     
                                 </div><hr>
                                 <div class="row">
-                                    <h6 class="display-6">Payment</h6>
-                                    <div class="form-check col-md-5 mb-1">
-                                        <input class="form-check-input col-2 mb-2 ms-1" type="radio" name="exampleRadios" id="exampleRadios1" value="credit" checked>
-                                        <label class="form-check-label col-sm-9 col-md-5" for="exampleRadios1">
-                                          credit Card
-                                        </label>
-                                    </div>
-                                     <div class="form-check col-md-5 mb-1">
-                                        <input class="form-check-input col-2 mb-2 ms-1" type="radio" name="exampleRadios" id="exampleRadios2" value="debit">
-                                        <label class="form-check-label col-sm-9 col-md-5" for="exampleRadios2">
-                                         Debit Card
-                                        </label>
-                                    </div>
-                                    <div class="form-check col-md-6 mb-1">
-                                        <input class="form-check-input col-2 mb-2 ms-1" type="radio" name="exampleRadios" id="exampleRadios3" value="cod">
-                                        <label class="form-check-label col-sm-9 col-md-5" for="exampleRadios3">
-                                          cash on delivery
-                                        </label>
-                                    </div>
+                                    <select class="form-select-sm col-6 mb-2 sbo" id="paySelect">
+                                         <option value="NULL" selected>Payment method</option>
+                                         <option value="credit">Credit Card</option>
+                                         <option value="debit">Debit Card</option>
+                                         <option value="cod">Cash On Delivery</option>
+                                    </select>
                                     <div id="card">
                                         <input type="text" class="form-control-sm col-5 mb-2" placeholder="Name on Card" required>
                                         <input type="text" class="form-control-sm col-5 mb-2" placeholder="Card Number" required>
