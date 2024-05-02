@@ -30,6 +30,9 @@ body,html{
     #imgphone{
         display: block; /*making a image visible instead of carousel for smaller devices*/
     }
+    #nVegItems,#vegItems{ 
+        margin-left: 20px; /*adding left space for items in small screens*/
+    }
 }
 @media (min-width:1000px) {
         #imgphone{
