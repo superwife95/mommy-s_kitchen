@@ -11,7 +11,6 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="css/min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js">
     </head>
     <body>
         <header>
@@ -22,12 +21,11 @@
                 <li class="breadcrumb-item">
                     <a class="bread-crumb-link text-white" href="menu.html">menu</a>
                 </li>
-                <li class="breadcrumb-item text-white">
-                    <a class="bread-crumb-link text-white" href="checkout.html" disabled>Checkout</a>
+                <li class="breadcrumb-item active ">
+                    <a class="bread-crumb-link text-secondary" href="#">Checkout</a>
                 </li>
             </ul>
         </header>
-        <body>
             <main>
                 <div class="container">
                     <div class="row">
@@ -36,9 +34,9 @@
                                <h6 class="display-6 col-12 text-center">Express checkout</h6>
                                <button class="col-3 btn btn-info ms-1"> <i class="fa fa-paypal"> PayPal</i>
                                </button>
-                               <button class="col-3 btn btn-dark ms-1"> <i class="fa fa-google" aria-hidden="true"></i> Pay</i>
+                               <button class="col-3 btn btn-dark ms-1"> <i class="fa fa-google" aria-hidden="true"></i> Pay
                                </button> 
-                               <button class="col-3 btn btn-warning ms-1"> <i class="fa fa-amazon" aria-hidden="true"></i> Pay</i>
+                               <button class="col-3 btn btn-warning ms-1"> <i class="fa fa-amazon" aria-hidden="true"></i> Pay
                                </button>        
                            </div><hr>
                             <div class="row pt-2">
@@ -50,7 +48,7 @@
                                 </div>
                                 <div class="row">
                                     <label for="uname" class="form-label fw-bold pt-4">Delivery Address</label>
-                                    <input type="text" class="form-control-sm col-6 ms-1" placeholder="First name" required maxlength="10">
+                                    <input type="text" class="form-control-sm col-6 ms-1" placeholder="First name" required maxlength="10" id="uname">
                                     <input type="text" class="form-control-sm col-5 ms-2"  placeholder="Last Name" maxlength="10" required>
                                     
                                 </div>
@@ -104,8 +102,8 @@
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <td scope="row">
-                                            <img class="col-6" src="images/momo.jpeg">
+                                        <td >
+                                            <img class="col-6" src="images/momo.jpeg" alt="no image">
                                             <p class="mt-2">Stock:<span class="text-success">In Stock</span></p>
                                         </td>
                                         <td ><input type="number" value="2" class="col-4" max="10" min="1"></td>
@@ -113,8 +111,8 @@
                                         <td class="col-1">Rs 150</td>
                                     </tr>
                                     <tr>
-                                        <td scope="row">
-                                            <img class="col-6" src="images/butter.jpeg">
+                                        <td>
+                                            <img class="col-6" src="images/butter.jpeg" alt="no img">
                                             <p class="mt-2">Stock:<span class="text-success">In Stock</span></p>
                                         </td>
                                         <td ><input type="number" value="1" class="col-4" max="10" min="1"></td>
@@ -122,7 +120,7 @@
                                         <td class="col-1">Rs 200</td>
                                     </tr>
                                     <tr>
-                                        <td scope="row">
+                                        <td>
                                             <h3 class="display-6">Subtotal</h3>
                                         </td>
                                         <td></td>
@@ -130,7 +128,7 @@
                                         <td class="col-3 display-6">Rs 350</td>
                                     </tr>
                                     <tr>
-                                        <td scope="row">
+                                        <td>
                                             <h3 class="display-6">Shipping</h3>
                                         </td>
                                         <td></td>
@@ -138,7 +136,7 @@
                                         <td class="col-3 display-6">Rs 30</td>
                                     </tr>
                                     <tr>
-                                        <td scope="row">
+                                        <td>
                                             <h3 class="display-6">Total</h3>
                                         </td>
                                         <td></td>
@@ -155,7 +153,7 @@
                                 </div>
                             </div>
                             <div class="row mt-2 mb-2">
-                                <button class="ms-2 btn btn-success col-5 mb-4"><a href="#uemail" class="text-light text-decoration-none">proceed</a></button>
+                                <button class="ms-2 btn btn-success col-5 mb-4" onclick="alert('fill checkout form');">Proceed</button>
                                 <button class="btn btn-danger col-5 offset-1 mb-4" data-bs-toggle="modal" data-bs-target="#mo1">Clear cart</button>
                                 <div class="modal fade" id="mo1">
                                     <div class="modal-dialog">
@@ -181,6 +179,5 @@
                 </div>
             </main>
             <footer></footer>
-        </body>
     </body>
 </html>

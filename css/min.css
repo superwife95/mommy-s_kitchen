@@ -10,39 +10,44 @@ body{
 body,html{
     height: 100%;
 }
+/*image height for card in menu*/
 .imgheight{
     height: 500px;
 }
+/*heading color for signup page and menu in home page*/
 .menucolor{
     color:var(--bs-pink);
 }
+/*border for heading page*/
 .regborder{
     border:1px dashed white;
 }
 @media (max-width:1000px) {
-    #carouselExampleInterval{
+    #carouselExampleInterval{ /*making carousel visible only for a devices with min width:1000px*/
         display:none;
       
     }
     #imgphone{
-        display: block;
+        display: block; /*making a image visible instead of carousel for smaller devices*/
     }
 }
 @media (min-width:1000px) {
         #imgphone{
-            display: none;
+            display: none; /*making the image disable for bigger screens*/
         }
         #loginpage{
-            margin-top: 10%;
+            margin-top: 10%; /*for larger screens*/
             
         }
  }
+ /*home page footer*/
  footer{
     position:fixed;
     width:100%;
     bottom:0;
     height: 45px;
  }
+ /* image height of checkout page*/
  .card_image{
    height: 200px;
  }
@@ -62,15 +67,19 @@ body,html{
     .loginSection{
         padding-bottom: 10%;
     }
+    /*making background color to biege for 2nd section that contains details of cart*/
     .checkBg{
         background-color: beige;
     }
+    /*increase d font size of nav links in index page*/
    .navbar-nav .nav-item a{
         font-size: 20px;
     }
+    /*making select margin matches with rest of the text fields in payment*/
     #paySelect{
         margin-left: 14px;
     }
+    /*to make the border of select and text area matches with text fields*/
     .sbo{
         border:2px solid black;
     }
